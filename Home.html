@@ -13,20 +13,27 @@
             <fieldset>
                 <legend>Your Face</legend>
                 <label for="avatar">Your image:</label>
-                <input type="file" required="required"> <br> 
-                Image preview: <img id="preview" src="" alt=""> <br>
+                <input type="file" name="UserImage" required="required"> <br> 
+                <label for="avatar"> Image preview:</label>
+                <img id="preview" src="" alt=""> <br>
             </fieldset> <br>
 
             <fieldset>
                 <legend>Your general details</legend>
-                Name: <input type="text" required="required">
-                <br> Gender:
-                <input type="radio" name="" id="" required="required">
-                <input type="radio" name="" id="" required="required"> <br>
-                 Age:<input type="number" name="" id="" required="required"> <br>
-                  Date of birth: <input type="date" name="" id=""> <br>
-                   Favorite Color: <input type="color" name="" id=""> <br>
-                    Which country: <select name="" id="">
+                 <label for="details">Name:</label>
+                  <input type="text" name="Username" required="required">
+                <br>
+                <label for="details">Gender:</label>
+                <input type="radio" name="m" id="" required="required">
+                <input type="radio" name="f" id="" required="required"> <br>
+                 <label for="details">Age:</label>
+                  <input type="number" name="Age" id="" required="required"> <br>
+                 <label for="details"> Date of birth:</label>
+                  <input type="date" name="Date" id=""> <br>
+                 <label for="details">  Favorite Color: </label>
+                  <input type="color" name="Color" id=""> <br>
+                 <label for="details">  Which country: </label>
+                    <select name="Country" id="">
                 <option value=""></option>
                 <option value=""></option>
                 <option value=""></option>
@@ -38,17 +45,23 @@
 
             <fieldset>
                 <legend>Your indicators</legend>
-                Height: Short<input type="range" name="" id="" min="0" max="100"> Tall<br>
-                 Salary: Poor<input type="range" name="" id="" min="0" max="100"> Rich <br>
+                 <label for="indicators">Height: </label>
+                Short<input type="range" name="Height" id="" min="0" max="100"> Tall<br>
+                 <label for="indicators">Salary: </label>
+                 Poor<input type="range" name="Salary" id="" min="0" max="100"> Rich <br>
             </fieldset> <br>
 
             <fieldset>
                 <legend>Your Contact Information</legend>
-                Email: <input type="email" name="" id="" required="required"><br>
-                 Mobile: <input type="tel" name="" id=""> <br>
-                  Address: <textarea
-                    name="" id="" cols="30" rows="10"></textarea> <br>
-                  Method to contact you:
+                 <label for="Info">Email: </label>
+                <input type="email" name="Email" id="" required="required"><br>
+                 <label for="Info">Mobile: </label>
+                 <input type="tel" name="Mobile" id=""> <br>
+                 <label for="Info">Address: </label>
+                  <textarea
+                    name="Address" id="" cols="30" rows="10"></textarea> <br>
+                 <label for="Info"> Method to contact you: </label>
+                 
                   <input type="checkbox" name="" id="">
                   <input type="checkbox" name="" id="">
                   <input type="checkbox" name="" id="">
