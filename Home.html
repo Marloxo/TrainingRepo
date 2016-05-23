@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="Home.css">
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+
     <title>Home</title>
 </head>
 
@@ -23,9 +26,9 @@
                 <label for="details">Name:</label>
                 <input type="text" name="Username" placeholder="Your Full Name" required="required">
                 <br>
-                <label for="details">Gender:</label>
-                <input type="radio" name="gender" value="male" required="required"> Male
-                <input type="radio" name="gender" value="female" required="required"> Female<br>
+                <label for="details" class="radio">Gender:</label>
+                <input type="radio" name="gender" class="radio" value="male" required="required"> Male
+                <input type="radio" name="gender" class="radio" value="female" required="required"> Female<br>
                 <label for="details">Age:</label>
                 <input type="number" name="Age" id="" required="required"> <br>
                 <label for="details"> Date of birth:</label>
@@ -45,10 +48,14 @@
 
             <fieldset>
                 <legend>Your indicators</legend>
-                <label for="indicators">Height: </label> Short
-                <input type="range" name="Height" id="" min="0" max="100"> Tall<br>
-                <label for="indicators">Salary: </label> Poor
-                <input type="range" name="Salary" id="" min="0" max="100"> Rich <br>
+                <label for="indicators">Height: </label>
+                <label for="range1" class="range1">Short </label>
+                <input type="range" name="Height" id="" min="0" max="100">
+                <label for="range1" class="range2"> Tall</label> <br>
+                <label for="indicators">Salary: </label>
+                <label for="range2" class="range1">Poor </label>
+                <input type="range" name="Salary" id="" min="0" max="100">
+                <label for="range2" class="range2"> Rich</label> <br>
             </fieldset> <br>
 
             <fieldset>
@@ -61,12 +68,9 @@
                 <textarea name="Address" id="" cols="30" rows="10"></textarea> <br>
                 <label for="Info"> Method to contact you: </label>
 
-                <label for="Info">Email</label>
-                <input type="checkbox" name="" id="">
-                <label for="Info">Whatsapp</label>
-                <input type="checkbox" name="" id="">
-                <label for="Info">In-app chat</label>
-                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="Email" id="chechbox">Email
+                <input type="checkbox" name="Whatsapp" id="chechbox"> Whatsapp
+                <input type="checkbox" name="appchat" id="chechbox">In-app chat
             </fieldset> <br>
             <input type="submit" value="Submit">
         </div>
