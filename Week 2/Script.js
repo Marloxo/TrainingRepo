@@ -4,13 +4,13 @@ function do_game() {
     Target = colors[Target_Index];
     alert("\n\n The Target Color Is :   " + Target);
 
-    var guess_Input = prompt("Welcome To Guess the Color Game : \n "+colors + "\n\n guess the color!");
+    var guess_Input = prompt("\n Welcome To Guess the Color Game : \n " + colors + "\n\n What Color am I thinking of ?");
     count = 1;
 
     while (!check_guess(guess_Input)) {
         //alert(guess_Input);
         count++;
-        guess_Input = prompt(colors + "\n guess the color!");
+        guess_Input = prompt("\n" + colors + "\n Guess Again !");
     }
 }
 
@@ -20,15 +20,15 @@ function check_guess(input) {
         return true;
     }
     if (colors.indexOf(input) == -1) {
-        alert("I don’t recognize that color!");
+        alert("\n Sorry \n I don’t recognize that color!");
         return false;
     }
     else if (input > Target) {
-        alert("Your input is alphabetically higher than mine!");
+        alert("\n Hint: Your input is alphabetically higher than mine!");
         return false;
     }
     else if (input < Target) {
-        alert("Your input is alphabetically lower than mine!");
+        alert("\n Hint: Your input is alphabetically lower than mine!");
         return false;
     }
     else {
