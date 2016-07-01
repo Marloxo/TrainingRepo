@@ -20,16 +20,35 @@
             border-left: 1px solid black;
         }
     </style>
+
 </head>
 
-<body>
+<body onload="generateFaces()">
     <h1>Matching Game</h1>
     <p>Click on the extra smiling face on the left</p>
 
-    <div id="leftSide">left</div>
+    <div id="leftSide"> </div>
 
-    <div id="rightSide">right</div>
+    <div id="rightSide"> </div>
 
+
+    <script>
+    var numberOfFaces = 5;
+    var theLeftSide = document.getElementById("leftSide");
+
+    function generateFaces() {
+        for (var index = 0; index < numberOfFaces; index++) {
+ 
+        var element = numberOfFaces;
+        var img = document.createElement("img");
+        img.src = "smile.png";
+        img.style.top = Math.random() * 400+"px";
+        img.style.left = Math.random() * 400+"px";
+       
+        var x = theLeftSide.appendChild(img);
+        }
+    }
+    </script>
 </body>
 
 </html>

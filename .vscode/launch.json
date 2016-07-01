@@ -1,7 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
+        {   //Not Used
             "name": "Launch",
             "type": "node",
             "request": "launch",
@@ -21,7 +21,7 @@
             "sourceMaps": false,
             "outDir": null
         },
-        {
+        {    //Not Used
             "name": "Attach",
             "type": "node",
             "request": "attach",
@@ -33,14 +33,14 @@
             "localRoot": "${workspaceRoot}",
             "remoteRoot": null
         },
-        //mine
+        //mine Used
         {
             "name": "Launch Mine index.html (without sourcemaps)",
             "type": "chrome",
             "request": "launch",
-            "file": "${workspaceRoot}/Week 2/Home.html"
+            "file": "${workspaceRoot}/Week 3/Home.html"
         },
-        {
+        {//Nah
             "name": "Launch localhost with sourcemaps",
             "type": "chrome",
             "request": "launch",
@@ -48,7 +48,7 @@
             "sourceMaps": true,
             "webRoot": "wwwroot"
         },
-        {
+        {//Nah
             "name": "Attach",
             "type": "chrome",
             "request": "attach",
