@@ -35,6 +35,7 @@
     <script>
     var numberOfFaces = 5;
     var theLeftSide = document.getElementById("leftSide");
+    var theRightSide = document.getElementById("rightSide");
 
     function generateFaces() {
         for (var index = 0; index < numberOfFaces; index++) {
@@ -45,8 +46,13 @@
         img.style.top = Math.random() * 400+"px";
         img.style.left = Math.random() * 400+"px";
        
-        var x = theLeftSide.appendChild(img);
+        theLeftSide.appendChild(img);
         }
+
+        leftSideImages = theLeftSide.cloneNode(true);
+        var xz = leftSideImages.lastChild;
+        //  leftSideImages = leftSideImages.removeChild(xz);
+       theRightSide.appendChild(leftSideImages);
     }
     </script>
 </body>
